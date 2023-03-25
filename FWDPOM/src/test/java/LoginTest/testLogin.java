@@ -1,30 +1,30 @@
 package LoginTest;
 
 import Base.BaseTest;
-import Pages.LoginAndRegisterPage;
+import Pages.LoginPage;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class testLogin extends BaseTest {
 
-    SoftAssert softAssert=new SoftAssert();
+   SoftAssert softAssert=new SoftAssert();
     @Test(priority = 1)
     public void tesLoginWithInvalidData() {
-        LoginAndRegisterPage loginAndRegisterPage = homePage.clickLoginButton();
-        loginAndRegisterPage.getMailFieldLogin().sendKeys("SignUpForFrjhhee@InvaliddEmfffll55ail.com");
-        loginAndRegisterPage.getPassword().sendKeys("wrong password");
-        loginAndRegisterPage.getLoginButton().click();
-        softAssert.assertTrue(loginAndRegisterPage.getErrorMessage().getText().equalsIgnoreCase("Your email or password is incorrect!"),"User Login Successfully");
-        softAssert.assertEquals(loginAndRegisterPage.getErrorMessageColor(),"rgba(255, 0, 0, 1)");
+        LoginPage loginPage = homePage.clickLoginButton();
+        loginPage.setMailFiled("test@ddd.com");
+        loginPage.setPasswordField("wrong pass");
+        loginPage.getLoginBtn();
+        softAssert.assertTrue(loginPage.getErrorMessage().getText().contains("Login was unsuccessful."),"In valid error message");
+        softAssert.assertEquals(loginPage.getErrorMessageColor(),"#e4434b");
         softAssert.assertAll();
     }
     @Test(priority = 2)
     public void testSuccessfulLogin() {
-        LoginAndRegisterPage loginAndRegisterPage = homePage.clickLoginButton();
-        loginAndRegisterPage.getMailFieldLogin().sendKeys("SignUpForFrjhhee@InvaliddEmfffllail.com");
-        loginAndRegisterPage.getPassword().sendKeys("Test2");
-        loginAndRegisterPage.getLoginButton().click();
-        softAssert.assertTrue(homePage.driver.getTitle().equalsIgnoreCase("Automation Exercise"),"Login Failed");
+        LoginPage loginPage = homePage.clickLoginButton();
+        loginPage.setMailFiled("test1@gmail.com");
+        loginPage.setPasswordField("123456");
+        loginPage.getLoginBtn();
+        softAssert.assertTrue(homePage.getMyAccountTab().equalsIgnoreCase("My account"),"Login Failed");
         softAssert.assertAll();
     }
 }

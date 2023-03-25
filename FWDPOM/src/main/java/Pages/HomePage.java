@@ -1,35 +1,41 @@
 package Pages;
 
+import Utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.List;
 
-public class HomePage {
+public class HomePage extends Utils {
     public WebDriver driver;
 
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
-     public LoginAndRegisterPage clickLoginButton() {
-        clickOnButton("Signup / Login");
-        return new LoginAndRegisterPage(driver);
+     public RegisterPage clickRegisterButton() {
+        clickOnButton("Register");
+        return new RegisterPage(driver);
     }
-    private void clickOnButton(String linkText){
-        driver.findElement(By.linkText(linkText)).click();
+    public LoginPage clickLoginButton(){
+        clickOnButton("Log in");
+        return new LoginPage(driver);
     }
-    public WebElement getLogoutButtonAndClickOn(){
-        driver.get("https://automationexercise.com/");
-        List<WebElement> lists = driver.findElements(By.cssSelector("ul li"));
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Logout")));
-
-        System.out.println(lists.get(3).getText());
-        return lists.get(3);
+    public String getMyAccountTab(){
+        return driver.findElement(By.linkText("My account")).getText();
     }
+    private WebElement getEuroOption(){
+        return driver.findElement(By.id("customerCurrency"));
+    }
+    public void SelectEuro(){
+        selectOptions(getEuroOption(),"Euro");
+    }
+    private List<WebElement> getProducts(){
+         return driver.findElements(By.className("prices"));
+    }
+    public boolean checkEuro(){
+        for (int i=0;i<getProducts().size();i++)
+            return getProducts().get(i).getText().contains("€");
+        return false;
+        }
 }

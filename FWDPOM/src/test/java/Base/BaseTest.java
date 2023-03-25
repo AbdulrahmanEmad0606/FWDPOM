@@ -17,7 +17,7 @@ public class BaseTest {
         co.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(co);
         driver.manage().window().maximize();
-        driver.get("https://automationexercise.com/");
+        driver.get("https://demo.nopcommerce.com/");
         homePage = new HomePage(driver);
     }
 

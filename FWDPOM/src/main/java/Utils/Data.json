@@ -1,0 +1,28 @@
+{
+  "User Data": [
+    {
+      "Email": "testmail1@gmail.com",
+      "First_Name": "Abdulrahman",
+      "Last_Name": "Emad",
+      "Password": "123456"
+    },
+    {
+      "Email": "testmail2@gmail.com",
+      "First_Name": "Mahmoud",
+      "Last_Name": "Emad",
+      "Password": "123456"
+    },
+    {
+      "Email": "testmail3@gmail.com",
+      "First_Name": "Mariam",
+      "Last_Name": "Emad",
+      "Password": "123456"
+    },
+    {
+      "Email": "testmail4@gmail.com",
+      "First_Name": "Mohamed",
+      "Last_Name": "Emad",
+      "Password": "123456"
+    }
+  ]
+}
