@@ -5,7 +5,7 @@ import Pages.LoginPage;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class testLogin extends BaseTest {
+public class LoginTests extends BaseTest {
 
    SoftAssert softAssert=new SoftAssert();
     @Test(priority = 1)
@@ -21,7 +21,7 @@ public class testLogin extends BaseTest {
     @Test(priority = 2)
     public void testSuccessfulLogin() {
         LoginPage loginPage = homePage.clickLoginButton();
-        loginPage.setMailFiled("test1@gmail.com");
+        loginPage.setMailFiled("test5@gmail.com");
         loginPage.setPasswordField("123456");
         loginPage.getLoginBtn();
         softAssert.assertTrue(homePage.getMyAccountTab().equalsIgnoreCase("My account"),"Login Failed");

@@ -1,5 +1,6 @@
 package Utils;
 
+import org.bouncycastle.util.Arrays;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,10 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
 
-public class Utils {
+public class Utils  {
     // wait till item appears
-    private WebDriver driver;
+private WebDriver driver;
     public void waitTillVisibility(By el) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOfElementLocated(el));
@@ -25,4 +28,5 @@ public class Utils {
     public void clickOnButton(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
+    
 }

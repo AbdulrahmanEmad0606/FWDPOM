@@ -2,15 +2,11 @@ package RegisterTest;
 
 import Base.BaseTest;
 import Pages.AccountCreatedPage;
-import Pages.LoginPage;
 import Pages.RegisterPage;
-import org.json.simple.parser.ParseException;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import Utils.JsonReader;
-import java.io.IOException;
+
 import java.util.Date;
 
 public class RegisterTest extends BaseTest {
