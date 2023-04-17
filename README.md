@@ -33,8 +33,8 @@ This is a test suite for the Selenium project written in Java.
 Not Included for this project as don't use the parallel execution CI/CD and wil be used later
 
 ## Includded Features
--**Interacting with dropdown elements
--**Advanced Interactions
--**Additional Keys
--**Hanle multible Windows
--**JavaScript Execution
+- **Interacting with dropdown elements
+- **Advanced Interactions
+- **Additional Keys
+- **Hanle multible Windows
+- **JavaScript Execution
