@@ -2,6 +2,7 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
 
 public class AccountCreatedPage {
@@ -17,5 +18,6 @@ public class AccountCreatedPage {
         String color1= driver.findElement(By.className("result")).getCssValue("color");
         return Color.fromString(color1).asHex();
     }
+
 
 }

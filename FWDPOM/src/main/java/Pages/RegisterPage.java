@@ -1,18 +1,46 @@
 package Pages;
 
+import CoreElements.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
-public class RegisterPage {
-    private WebDriver driver;
+public class RegisterPage extends BasePage {
 
-    public RegisterPage(WebDriver driver) {
-        this.driver = driver;
+    public RegisterPage(Driver webDriver) {
+        super(webDriver);
     }
 
+    /** RegisterPage locators **/
+    DropDown dropDown=new DropDown(webDriver.getWebDriver());
+    RadioButton gender=new RadioButton(By.id("gender-male"));
+    TextBox firstName=new TextBox(By.id("FirstName"));
+    TextBox lastName=new TextBox(By.id("LastName"));
+    TextBox filledEmail=new TextBox(By.id("Email"));
+    TextBox filledCompany=new TextBox(By.id("Company"));
+    CheckBox checkedNewsLetter=new CheckBox(By.id("Newsletter"));
+    TextBox filledPassword=new TextBox(By.id("Password"));
+    TextBox filledConfirmPassword=new TextBox(By.id("ConfirmPassword"));
+    Button registerBtn=new Button(By.id("register-button"));
+
+
+
+    public AccountCreatedPage setData
+            (String fName,String lName,String day,String month,String year,String email,String company,String password,String confirmPassword){
+        gender.radioBtnClick();
+        firstName.typeText(fName);
+        lastName.typeText(lName);
+        dropDown.selectDay("1");
+        dropDown.selectMonth("June");
+        dropDown.selectYear("1998");
+        filledEmail.typeText(email);
+        filledCompany.typeText(company);
+        checkedNewsLetter.click();
+        filledPassword.typeText(password);
+        filledConfirmPassword.typeText(confirmPassword);
+        registerBtn.click();
+        return new AccountCreatedPage(webDriver.getWebDriver());
+    }
+
+    /*
     public void getAndSelectGender() {
         driver.findElement(By.id("gender-male")).click();
     }
@@ -96,4 +124,5 @@ public class RegisterPage {
         driver.findElement(By.id("register-button")).click();
         return new AccountCreatedPage(driver);
     }
+*/
 }

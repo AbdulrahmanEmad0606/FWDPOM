@@ -1,0 +1,29 @@
+[ReportManager] Setting discrete logging to: 'false' @23-04-2023 14:00:27.0804 pm
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                                         Test Method: 'Test1.testFirst'                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Setting discrete logging to: 'true' @23-04-2023 14:00:27.0804 pm
+[ReportManager] Setting "targetOperatingSystem" property with "WINDOWS". @23-04-2023 14:00:27.0835 pm
+[ReportManager] Setting "screenshotParams_screenshotType" property with "Regular". @23-04-2023 14:00:27.0835 pm
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @23-04-2023 14:00:27.0835 pm
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @23-04-2023 14:00:27.0835 pm
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @23-04-2023 14:00:27.0835 pm
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @23-04-2023 14:00:27.0835 pm
+[ReportManager] Attempting to run locally on: "WINDOWS | Chrome". @23-04-2023 14:00:27.0851 pm
+[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @23-04-2023 14:00:27.0851 pm
+[ReportManager] Successfully Opened: "WINDOWS | Chrome". @23-04-2023 14:00:30.0748 pm
+[ReportManager] Target URL: "https://www.phptravels.net/" @23-04-2023 14:00:31.0039 pm
+[ReportManager] File Action "CreateFile" successfully performed. With the following test data "Target Folder: "allure-results//screenshots/20230423-140043", Target File: "\1682251244463_testFirst.gif"". @23-04-2023 14:00:44.0700 pm
+[ReportManager] Navigate to url "https://www.phptravels.net/". @23-04-2023 14:00:45.0888 pm
+[ReportManager] Click "ACCOUNT ". @23-04-2023 14:00:46.0900 pm
+[ReportManager] Click "Customer Signup". @23-04-2023 14:00:48.0303 pm
+[ReportManager] Type "Abdulrahman" into "First Name". @23-04-2023 14:00:55.0338 pm
+[ReportManager] Type "Emad" into "Last Name". @23-04-2023 14:00:55.0982 pm
+[ReportManager] Type "01007943090" into "Phone". @23-04-2023 14:00:56.0558 pm
+[ReportManager] Type "test@gmail.com" into "Email". @23-04-2023 14:00:57.0145 pm
+[ReportManager] Type "123456" into "Password". @23-04-2023 14:00:57.0721 pm
+[ReportManager] Click "Signup". @23-04-2023 14:00:59.0297 pm
+[ReportManager] Successfully created attachment 'Animated Gif - testFirst' @23-04-2023 14:00:59.0316 pm

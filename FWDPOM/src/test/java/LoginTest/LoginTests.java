@@ -1,13 +1,17 @@
 package LoginTest;
 
-import Base.BaseTest;
+import CoreElements.Driver;
+import Pages.HomePage;
 import Pages.LoginPage;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class LoginTests extends BaseTest {
+public class LoginTests {
+    Driver driver=new Driver();
 
-   SoftAssert softAssert=new SoftAssert();
+    HomePage homePage=new HomePage(driver);
+    SoftAssert softAssert = new SoftAssert();
+
     @Test(priority = 1)
     public void tesLoginWithInvalidData() {
         LoginPage loginPage = homePage.clickLoginButton();
