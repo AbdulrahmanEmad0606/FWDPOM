@@ -3,14 +3,18 @@ package LoginTest;
 import CoreElements.Driver;
 import Pages.HomePage;
 import Pages.LoginPage;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class LoginTests {
     Driver driver=new Driver();
-
     HomePage homePage=new HomePage(driver);
     SoftAssert softAssert = new SoftAssert();
+//    @BeforeTest
+//    public void setUp() {
+//        homePage.openSite();
+//    }
 
     @Test(priority = 1)
     public void tesLoginWithInvalidData() {
