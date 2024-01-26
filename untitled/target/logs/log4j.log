@@ -1,0 +1,892 @@
+[INFO ] 2023-04-23 14:00:25.586 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                      Powered by SHAFT Engine v7.2.20230419                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-04-23 14:00:26.721 [main] ReportManager - Loaded OpenCV "opencv_java470".
+[INFO ] 2023-04-23 14:00:26.737 [main] ReportManager - File Action "DeleteFolder" successfully performed. With the following test data "Target Folder: "execution-summary"".
+[INFO ] 2023-04-23 14:00:26.737 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2023-04-23 14:00:26.910 [main] ReportManager - Initializing Extent Reporting Environment...
+[INFO ] 2023-04-23 14:00:27.335 [main] ReportManager - getPreserveOrder: true
+[INFO ] 2023-04-23 14:00:27.351 [main] ReportManager - getDataProviderThreadCount: 1
+[INFO ] 2023-04-23 14:00:27.351 [main] ReportManager - getThreadCount: 1
+[INFO ] 2023-04-23 14:00:27.351 [main] ReportManager - getVerbose: 1
+[INFO ] 2023-04-23 14:00:27.351 [main] ReportManager - getGroupByInstances: true
+[INFO ] 2023-04-23 14:00:27.351 [main] ReportManager - getParallel: none
+[INFO ] 2023-04-23 14:00:27.495 [main] Utils - [TestNG] Running:
+  C:\Users\DELL\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[INFO ] 2023-04-23 14:00:27.534 [main] ReportManager - Setting discrete logging to: 'false'
+[INFO ] 2023-04-23 14:00:27.534 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-04-23 14:00:27.534 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:27.649 [main] ReportManager - Initializing Important Links...
+[INFO ] 2023-04-23 14:00:27.649 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0649 pm
+<ul>
+    <li>👨‍💻️ <a href="https://github.com/ShaftHQ/SHAFT_ENGINE" target=”_blank”>GitHub - Home</a></li>
+    <li>👤 <a href="https://shafthq.github.io/SHAFT_Engine_Docusaurus/" target=”_blank”>User Guide</a></li>
+    <li>⚙️ <a href="https://shafthq.github.io/SHAFT_ENGINE/" target=”_blank”>Configuration Manager</a></li>
+    <li>📚 <a href="https://shafthq.github.io/SHAFT_ENGINE/apidocs/index.html" target=”_blank”>Javadocs</a></li>
+</ul>
+
+[INFO ] 2023-04-23 14:00:27.649 [main] ReportManager - Initializing Properties...
+[INFO ] 2023-04-23 14:00:27.724 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0724 pm
+#############
+# https://cucumber.io/docs/cucumber/api/#list-configuration-options
+##############
+cucumber.ansi-colors.disabled=false
+#true or false. default: false
+cucumber.execution.dry-run=false
+#true or false. default: false
+cucumber.execution.limit=
+#number of scenarios to execute (CLI only).
+cucumber.execution.order=lexical
+#lexical, reverse, random or random:[seed] (CLI only). default: lexical
+cucumber.execution.strict=true
+#true or false. default: true.
+cucumber.execution.wip=false
+#true or false. default: false.
+cucumber.features=src/test/resources
+#comma separated paths to feature files. example: path/to/example.feature, path/to/other.feature
+cucumber.filter.name=
+#regex. example: .*Hello.*
+cucumber.filter.tags=
+#tag expression. example: @smoke and not @slow
+cucumber.glue=customCucumberSteps, com.shaft.cucumber
+# comma separated package names. example: com.example.glue
+cucumber.plugin=pretty, json:allure-results/cucumber.json, html:allure-results/cucumberReport.html, com.shaft.listeners.CucumberTestRunnerListener
+# comma separated plugin strings. example: pretty, json:path/to/report.json
+cucumber.object-factory=
+#object factory class name. example: com.example.MyObjectFactory
+cucumber.snippet-type=underscore
+#underscore or camelcase. default: underscore
+cucumber.publish.quiet=true
+CUCUMBER_PUBLISH_ENABLED=false
+
+[INFO ] 2023-04-23 14:00:27.724 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0724 pm
+# Use this to add any custom capabilities
+# This includes SeeTest Continuous Testing cloud platform capabilities: https://docs.experitest.com/display/TE/Application+Setup
+capabilities.accessKey=
+capabilities.appiumVersion=
+capabilities.deviceQuery=
+
+[INFO ] 2023-04-23 14:00:27.724 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0724 pm
+###################################################
+##### SHAFT_Engine: JiraXRay.properties
+###################################################
+jiraInteraction=false
+jiraUrl=https://
+projectKey=
+authType=undefined
+authorization=
+reportTestCasesExecution=true
+reportPath=target/surefire-reports/testng-results.xml
+ExecutionName=
+ExecutionDescription=
+ReportBugs=true
+assignee=
+allure.link.tms.pattern=https:///{} 
+allure.link.custom.pattern={}
+###################################################
+##### END of Properties File
+###################################################
+
+[INFO ] 2023-04-23 14:00:27.724 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0724 pm
+name=PropertiesConfig
+appender.console.type=Console
+appender.console.name=STDOUT
+appender.console.layout.type=PatternLayout
+appender.console.layout.disableAnsi=false
+appender.console.layout.pattern=%highlight{[%p]}{FATAL=red blink, ERROR=red bold, WARN=yellow bold, INFO=fg_#0060a8 bold, DEBUG=fg_#43b02a bold, TRACE=black} %style{%m }%style{| %-logger}{bright_black} %style{- %-thread}{bright_black} %style{- %d{hh:mm:ss a}}{bright_black} %n
+appender.console.filter.threshold.type=ThresholdFilter
+appender.console.filter.threshold.level=info
+appender.file.type=File
+appender.file.name=LOGFILE
+appender.file.fileName=target/logs/log4j.log
+appender.file.layout.type=PatternLayout
+appender.file.layout.pattern=[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+appender.file.filter.threshold.type=ThresholdFilter
+appender.file.filter.threshold.level=debug
+rootLogger=debug, STDOUT, LOGFILE
+logger.app.name=org.apache.http.impl.client
+logger.app.level=WARN
+
+[INFO ] 2023-04-23 14:00:27.724 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0724 pm
+###################################################
+##### SHAFT_Engine Path Properties
+###################################################
+propertiesFolderPath_CI=
+propertiesFolderPath=src/main/resources/properties/
+dynamicObjectRepositoryPath=src/main/resources/dynamicObjectRepository/
+testDataFolderPath=src/test/resources/testDataFiles/
+downloadsFolderPath=target/downloadedFiles/
+allureResultsFolderPath=allure-results/
+extentReportsFolderPath=extent-reports/
+video.folder=allure-results/videos
+applitoolsApiKey=
+###################################################
+##### END of Properties File
+###################################################
+
+[INFO ] 2023-04-23 14:00:27.724 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0724 pm
+###################################################
+##### SHAFT_Engine: Reporting.properties
+###################################################
+captureElementName=true
+captureWebDriverLogs=true
+alwaysLogDiscreetly=true
+debugMode=true
+cleanAllureResultsDirectoryBeforeExecution=true
+generateAllureReportArchive=true
+openAllureReportAfterExecution=true
+generateExtentReports=true
+cleanExtentReportsDirectoryBeforeExecution=true
+attachExtentReportToAllureReport=true
+openExecutionSummaryReportAfterExecution=true
+openLighthouseReportWhileExecution=true
+###################################################
+##### END of Properties File
+###################################################
+
+[INFO ] 2023-04-23 14:00:27.724 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0724 pm
+###################################################
+##### SHAFT_Engine: TestNG.properties
+###################################################
+setParallel=NONE
+setThreadCount=1
+setVerbose=1
+setPreserveOrder=true
+setGroupByInstances=true
+setDataProviderThreadCount=1
+###################################################
+##### END of PropertiesHelper File
+###################################################
+
+[INFO ] 2023-04-23 14:00:27.736 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:27.0736 pm
+###################################################
+##### SHAFT_Engine: VisualValidations.properties
+###################################################
+screenshotParams_scalingFactor=1
+screenshotParams_whenToTakeAScreenshot=ValidationPointsOnly
+screenshotParams_screenshotType=FullPage
+screenshotParams_highlightElements=true
+screenshotParams_highlightMethod=AI
+screenshotParams_skippedElementsFromScreenshot=
+screenshotParams_watermark=true
+screenshotParams_watermarkOpacity=0.2
+createAnimatedGif=true
+animatedGif_frameDelay=500
+videoParams_recordVideo=true
+videoParams_scope=DriverSession
+whenToTakePageSourceSnapshot=FailuresOnly
+###################################################
+##### END of Properties File
+###################################################
+
+[INFO ] 2023-04-23 14:00:27.740 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:27.804 [main] ReportManager - Setting discrete logging to: 'false'
+[INFO ] 2023-04-23 14:00:27.804 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                                         Test Method: 'Test1.testFirst'                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-04-23 14:00:27.804 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:27.835 [main] ReportManager - Setting "targetOperatingSystem" property with "WINDOWS".
+[INFO ] 2023-04-23 14:00:27.835 [main] ReportManager - Setting "screenshotParams_screenshotType" property with "Regular".
+[INFO ] 2023-04-23 14:00:27.835 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-04-23 14:00:27.835 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-04-23 14:00:27.835 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-04-23 14:00:27.835 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-04-23 14:00:27.851 [main] ReportManager - Attempting to run locally on: "WINDOWS | Chrome".
+[INFO ] 2023-04-23 14:00:27.851 [main] ReportManager - Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time...
+[DEBUG] 2023-04-23 14:00:28.279 [main] ResolutionCache - Removing resolution chrome=112 from cache (expired on 2023-04-23T05:45:51.000+0200)
+[DEBUG] 2023-04-23 14:00:28.297 [main] InternalHttpClient - ex-0000000001 preparing request execution
+[DEBUG] 2023-04-23 14:00:28.311 [main] ProtocolExec - ex-0000000001 target auth state: UNCHALLENGED
+[DEBUG] 2023-04-23 14:00:28.311 [main] ProtocolExec - ex-0000000001 proxy auth state: UNCHALLENGED
+[DEBUG] 2023-04-23 14:00:28.311 [main] ConnectExec - ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2023-04-23 14:00:28.311 [main] InternalHttpClient - ex-0000000001 acquiring endpoint (3 MINUTES)
+[DEBUG] 2023-04-23 14:00:28.311 [main] PoolingHttpClientConnectionManager - ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+[DEBUG] 2023-04-23 14:00:28.327 [main] PoolingHttpClientConnectionManager - ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2023-04-23 14:00:28.327 [main] PoolingHttpClientConnectionManager - ex-0000000001 acquired ep-0000000001
+[DEBUG] 2023-04-23 14:00:28.327 [main] InternalHttpClient - ex-0000000001 acquired endpoint ep-0000000001
+[DEBUG] 2023-04-23 14:00:28.327 [main] ConnectExec - ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2023-04-23 14:00:28.327 [main] InternalHttpClient - ep-0000000001 connecting endpoint (null)
+[DEBUG] 2023-04-23 14:00:28.342 [main] PoolingHttpClientConnectionManager - ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+[DEBUG] 2023-04-23 14:00:28.342 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolving remote address
+[DEBUG] 2023-04-23 14:00:28.405 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.111.133, raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/2606:50c0:8001:0:0:0:0:154, raw.githubusercontent.com/2606:50c0:8003:0:0:0:0:154, raw.githubusercontent.com/2606:50c0:8002:0:0:0:0:154, raw.githubusercontent.com/2606:50c0:8000:0:0:0:0:154]
+[DEBUG] 2023-04-23 14:00:28.405 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.111.133:443 (30 SECONDS)
+[DEBUG] 2023-04-23 14:00:28.405 [main] SSLConnectionSocketFactory - Connecting socket to raw.githubusercontent.com/185.199.111.133:443 with timeout 30 SECONDS
+[DEBUG] 2023-04-23 14:00:28.594 [main] SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+[DEBUG] 2023-04-23 14:00:28.594 [main] SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] 2023-04-23 14:00:28.594 [main] SSLConnectionSocketFactory - Starting handshake (null)
+[DEBUG] 2023-04-23 14:00:28.814 [main] SSLConnectionSocketFactory - Secure session established
+[DEBUG] 2023-04-23 14:00:28.814 [main] SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+[DEBUG] 2023-04-23 14:00:28.814 [main] SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+[DEBUG] 2023-04-23 14:00:28.814 [main] SSLConnectionSocketFactory -  peer principal: CN=*.github.io, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+[DEBUG] 2023-04-23 14:00:28.814 [main] SSLConnectionSocketFactory -  peer alternative names: [*.github.io, github.io, *.github.com, github.com, www.github.com, *.githubusercontent.com, githubusercontent.com]
+[DEBUG] 2023-04-23 14:00:28.830 [main] SSLConnectionSocketFactory -  issuer principal: CN=DigiCert TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+[DEBUG] 2023-04-23 14:00:28.830 [main] DefaultManagedHttpClientConnection - http-outgoing-0 set socket timeout to 3 MINUTES
+[DEBUG] 2023-04-23 14:00:28.830 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.111.133:443 as http-outgoing-0
+[DEBUG] 2023-04-23 14:00:28.830 [main] PoolingHttpClientConnectionManager - ep-0000000001 connected http-outgoing-0
+[DEBUG] 2023-04-23 14:00:28.830 [main] InternalHttpClient - ep-0000000001 endpoint connected
+[DEBUG] 2023-04-23 14:00:28.830 [main] MainClientExec - ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2023-04-23 14:00:28.830 [main] RequestAddCookies - ex-0000000001 Cookie spec selected: strict
+[DEBUG] 2023-04-23 14:00:28.830 [main] InternalHttpClient - ep-0000000001 start execution ex-0000000001
+[DEBUG] 2023-04-23 14:00:28.830 [main] PoolingHttpClientConnectionManager - ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+[DEBUG] 2023-04-23 14:00:28.830 [main] headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2023-04-23 14:00:28.830 [main] headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+[DEBUG] 2023-04-23 14:00:28.830 [main] headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+[DEBUG] 2023-04-23 14:00:28.830 [main] headers - http-outgoing-0 >> cache-control: max-age=0
+[DEBUG] 2023-04-23 14:00:28.830 [main] headers - http-outgoing-0 >> connection: keep-alive
+[DEBUG] 2023-04-23 14:00:28.830 [main] headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+[DEBUG] 2023-04-23 14:00:28.830 [main] wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.830 [main] wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.830 [main] wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.830 [main] wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.830 [main] wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.830 [main] wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.830 [main] wire - http-outgoing-0 >> "[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Content-Length: 723[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-GitHub-Request-Id: D4B0:0B2F:4F884D:632754:643E323D[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Date: Sun, 23 Apr 2023 12:00:21 GMT[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-Served-By: cache-mrs10546-MRS[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-Timer: S1682251222.691260,VS0,VE1[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "X-Fastly-Request-ID: 866411e5150cf30800ceabefa565dfe27c44eb70[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Expires: Sun, 23 Apr 2023 12:05:21 GMT[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "Source-Age: 45[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.910 [main] wire - http-outgoing-0 << "[\r][\n]"
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Connection: keep-alive
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Content-Length: 723
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Cache-Control: max-age=300
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-Frame-Options: deny
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-GitHub-Request-Id: D4B0:0B2F:4F884D:632754:643E323D
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Content-Encoding: gzip
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Accept-Ranges: bytes
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Date: Sun, 23 Apr 2023 12:00:21 GMT
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Via: 1.1 varnish
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-Served-By: cache-mrs10546-MRS
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-Cache: HIT
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-Cache-Hits: 1
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-Timer: S1682251222.691260,VS0,VE1
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << X-Fastly-Request-ID: 866411e5150cf30800ceabefa565dfe27c44eb70
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Expires: Sun, 23 Apr 2023 12:05:21 GMT
+[DEBUG] 2023-04-23 14:00:28.925 [main] headers - http-outgoing-0 << Source-Age: 45
+[DEBUG] 2023-04-23 14:00:28.925 [main] MainClientExec - ex-0000000001 connection can be kept alive for 3 MINUTES
+[DEBUG] 2023-04-23 14:00:28.940 [main] wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]V]o[0xffffffda]0[0x14]}[0xffffffe7]W\[0xffffff81]*[0xffffffb5][0x12][0x1f][[M[0xffffffd3]$[0x1e]hF[0xffffffbb]i [0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]$7[0xffffffc1]R[0x12]#;[0xffffff94]v[0xffffffbf]~[0xffffffb6][0xfffffff3]1[0xffffff92][0xffffff9a][0xffffffc1][0x1a]x[0xffffffcb][0xffffffb5][0xffffffaf][0xffffffcf]9[0xffffffbe][0xfffffff7]8v[0xb][0x1c][0x1e]E4[0xfffffff6]$x4[0xffffffa1][0xb]*[0xffffffb1][0xffffffd1][0xffffff82][0xfffffffb]%[0xffffff93][0xffffffe0][0xffffffb3][0x10][0xffffffc1][0xffffffe5]qBY,!Y[0xffffffea] KM8,[0x10][0xfffffff0][0x19][0xffffffdd]u[0xffffff82][0x1e][0xffffffb0][0xffffffd8]L[0xffffffcb]%[0xffffff86][0xffffffa1][0xe][0xffffffb8][0xfffffff0]P[0xffffffe8]$[0xf][0x13]t[0x13]3[0xfffffff9][0xffffff84]B2[0xffffffae][0xffffffe6]|@[0xfffffff5][0x1d][0x8][0xffffffc4][0x18][0x16][0xffffff82]o[0xffffffa4][0xffffff9a]P[0xffffff94][0xffffffe7][0xffffffce]R[0xfffffff0][0x8][0xffffffdb]p[0xffffffcb][0x4][0xfffffffa][0xfffffffc][0xffffffb9][\r][0xffffff93][0x15][\n]"
+[DEBUG] 2023-04-23 14:00:28.940 [main] wire - http-outgoing-0 << "[0xffffffda][0xffffff86][0xffffffa1][0x17][0xffffffa8]Q3[0xffffffcb][0xffffffd6][0xffffffd1][0xffffff85][0xffffffc6][0xfffffff7][0xffffff98][0xffffffef][0xffffffa3][0xffffffc0]8[0x1][0xffffffae]s[0x12][0x16][0x7] _d[0xffffff82][0xffffff91][0xffffff84][0xfffffff3][0x1f],[0xfffffff6][0x14]j[0x1b]F,^+[0xffffff98]1ua2[0xffffffbf]h([0xffffff8e][0xffffff94][0xffffffa2][0xffffff91]m[0xffffffa3][0xffffffeb][0xffffff9a][0xffffffb0][0xffffffbb]I[0x17]t[0xffffffdf][0xffffffbd][0xffffffef][0xffffffbb][0xffffff91][0xffffffd7]U[0xffffffbb][0xffffff82][0xffffff9e][0x3][0xffffff9b][0xffffff88][0xffffffb9][0xffffffa6]$[0xffffffa6][0xc][0xffffff9b][0xffffffa5][0xffffffe2][0xffffff83][0xffffff98]F[0xffffffd8]o[0xffffff9e]Mg[0xffffff93][0xffffffbb][0xffffffd9]`|[0xfffffffb]u4[0xffffff9c][0x7f]"}B[0xffffffce][0x8][0xffffffb9][0xffffffe3]<[0x8][0xffffff91][0xffffff90][0xffffff94][0xffffff82][0xffffff90][0xffffffc1]j[0x15]2WI[0xffffffe3]1![0x19][0xffffff91]BnB[0xffffff80][0x9]<f[0xffffffb5][0xffffffe8]=[0xffffffd1]p[0xffffffbd][[0xffffffcf][0xffffffe5][0x1b][0xfffffff4][0xffffff9c][0xffffffff][0xfffffffc][0xfffffff8][0xffffffe1][0xffffffe2][0xffffff94][0xffffffa2][0xffffffae][0xe][0x14]5[0xffffff9a]8[0xffffff83][0xffffffd1]`:[0xfffffffd]<[0xffffffb8][0x1f][0xffffff9c]R[0xffffffcf]u[0x7f]6[0xffffffbc][0xffffff83][0xffffffef][0xf][0xffffffc3][0xffffffd9]/[0xfffffff8][0xfffffff2][0xffffffcd]y s[0xffffffee]'[0x1b]*0g[0xffffffcb][0xffffffc8]nF7H][0xffffff83][0xffffff97]{[0xffffffb1]Q[0x5][\r][0xffffffb5]c[0xffffffb4][0xf][0x2][0xffffffb3][0xffffffb4][0xffffff93][0xe]C[0xffffffa7][0xffffffb3]kAD][0xffffff9d][0xffffffde][0xffffffdb][0xffffffda][0xffffff88][0xffffffec][0xffffffa5][0xffffffbc][0xffffff99][0xffffffd9][0xffffffba]t[0xffffffb5][0xffffffea]9[0xffffffea][0x10])[0xffffffb7][0xffffffca][0xffffff9e][0xfffffff2][0xffffffe2]d^N[0xffffffd8]FW[0x16][0xffffffcd][0xffffffdc]_[0x10][0xfffffff9]i|[0x1c][0xffffff93][0xffffff8e][0xfffffff9]o[0x16][0xffffff86]4'!$G[0xffffffdf]W[0xfffffff4]W*j[[0xfffffff3]xR[0xffffffae][0xffffffb6][0xc][0xffffffd0],; #[0xffffffa9][0xffffff92]5[0xffffffb5][0x7][0xffffff9c][0xffffffb5][0xffffffd0][0x7f][0xffffff90][0xffffffc7]jgs[0xfffffffc][0xffffffc2][0xb][0xffffffd9][0x0]t[0xffffff9e]^'Y[0xfffffffb][0xffffff9f][0xffffffb1][0xffffffd8]:[0xffffffbf][0xffffff8d][0xffffffa5][0xffffff9a][0xffffffad][0x7f]m[0x5]&[0xffffffaa][0xffffffa0]^[0xffffff9b][0xffffffcb][0x5]f[0xffffffae][0xffffffe0]RU[0xffffff82][0x10]MS9l[0xffffff91]4t[0xfffffffb][0xffffff8a]][0xffffffd6][0xfffffff4][0xffffff96][0xffffffa6][0xffffff9f]P[0xffffffce][0xffffffd5][0xffffffce][0xffffff93][0xffffffff][0xffffff97][0xffffffcc]p[0xfffffffd][0xfffffff3][0xffffffe8][0x1b][0xffffffcc][0xffffffa2][0xffffffd9]Q[0xffffffbe][0xffffffb2][0xffffffa3][0xffffffc7]m'[0xffffffdf][0xffffffe4][[0xfffffffb]^[0xffffffb0][0xffffff9a][0xffffffbe][0xffffffda][0xffffffda]_[0xffffffce][0xffffff80][0xffffffd2][0xffffffc1]7[0xffffffb7]][0xffffffc1]b[0xffffffee][0xffffffb5][0xffffffff]w[0xffffff83][0xffffffed][0xffffffa7];[0x15]<[0x10]4[0xffffff92][0xffffff84][0x18][\n]"
+[DEBUG] 2023-04-23 14:00:28.940 [main] wire - http-outgoing-0 << "BB[0xffffffba][0xffffff8e]][0xffffffb5]jo[0xffffffb9]+"[0xffffffea][0xffffffb4][0xffffffff]h"[0xffffffea]\?5[0xffffffa9][0xffffffaf]k[0xffffffec][0xffffffff]P[0xffffffea][\n]"
+[DEBUG] 2023-04-23 14:00:28.940 [main] wire - http-outgoing-0 << "w[0xffffffe1]K[0x13][0xffffffda][0xffffffec][0xffffff98][0xffffffe6]Y[0xfffffffd]h8m6[0xffffff9c]T[0xffffffc1][0xfffffff2][0xffffffa7][0xffffff91]z_[0xffffff95]o85p[0x1c][0x13][0xffffffe6][0xfffffff0]5[0xffffffee][0xfffffffc][0xffffff92][0xffffff96][0xffffffda][0xfffffff7][0xffffffcf][0xffffffb1][0x5][0x1d][0xffffffea]K[0xffffff9b]9[0xffffff8e][0xffffffad]e[0xfffffff7][0xffffff93][0xffffffa8]`[0xffffffda][0xffffffff][0x1a][0xffffffd2][0xffffff88][0xffffff85][0xfffffffd][0xfffffff2][0xffffff91]N[0xfffffff6]`[0xffffffdf]2[0xffffffcf][0xffffffae]E[0xffffff97][0xffffffc5][0xffffffa2][0xffffff9d][0xffffffef]'[0xffffff9d]mun.[0xffffffd3]f^[0xffffffc7][0xffffff82][0xffffffda][0xffffff82]9[0xfffffff5][0xffffffa9]`[0x5][0xffffffbc]4[0xffffffa1][0x1d]<M[0xffffffb5]A[0xffffffa7]3[[0xffffffc0][0x7f][0x0][0xffffffc1][0xffffffd0]$[0xffffff85][0x1d][\r][0x0][0x0]"
+[DEBUG] 2023-04-23 14:00:28.940 [main] InternalHttpClient - ep-0000000001 releasing valid endpoint
+[DEBUG] 2023-04-23 14:00:28.940 [main] PoolingHttpClientConnectionManager - ep-0000000001 releasing endpoint
+[DEBUG] 2023-04-23 14:00:28.940 [main] PoolingHttpClientConnectionManager - ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+[DEBUG] 2023-04-23 14:00:28.940 [main] PoolingHttpClientConnectionManager - ep-0000000001 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2023-04-23 14:00:28.940 [main] VersionDetector - Detecting chrome version using online commands.properties
+[DEBUG] 2023-04-23 14:00:28.940 [main] Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2023-04-23 14:00:29.051 [main] Shell - Result: Version=112.0.5615.138
+[DEBUG] 2023-04-23 14:00:29.051 [main] ResolutionCache - Resolution chrome112=112.0.5615.49 in cache (valid until 02:44:43 24/04/2023 EET)
+[INFO ] 2023-04-23 14:00:29.051 [main] WebDriverManager - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+[DEBUG] 2023-04-23 14:00:29.051 [main] ResolutionCache - Storing resolution chrome=112 in cache (valid until 15:00:29 23/04/2023 EET)
+[DEBUG] 2023-04-23 14:00:29.067 [main] WebDriverManager - Driver chromedriver 112.0.5615.49 found in cache
+[INFO ] 2023-04-23 14:00:29.067 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\DELL\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+[WARN ] 2023-04-23 14:00:29.707 [Exec Stream Pumper] ReportManager - Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 36191
+[WARN ] 2023-04-23 14:00:29.707 [Exec Stream Pumper] ReportManager - Only local connections are allowed.
+[WARN ] 2023-04-23 14:00:29.707 [Exec Stream Pumper] ReportManager - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[WARN ] 2023-04-23 14:00:29.707 [Exec Stream Pumper] ReportManager - ChromeDriver was started successfully.
+[WARN ] 2023-04-23 14:00:29.914 [Exec Stream Pumper] ReportManager - [1682251229.923][WARNING]: Ignoring unrecognized log type: client
+[WARN ] 2023-04-23 14:00:29.914 [Exec Stream Pumper] ReportManager - [1682251229.923][WARNING]: Ignoring unrecognized log type: profiler
+[WARN ] 2023-04-23 14:00:29.914 [Exec Stream Pumper] ReportManager - [1682251229.923][WARNING]: Ignoring unrecognized log type: server
+[WARN ] 2023-04-23 14:00:30.732 [main] ReportManager - Apr 23, 2023 2:00:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[WARN ] 2023-04-23 14:00:30.732 [main] ReportManager - WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+[INFO ] 2023-04-23 14:00:30.748 [main] ReportManager - Successfully Opened: "WINDOWS | Chrome".
+[INFO ] 2023-04-23 14:00:30.986 [main] MonteRecorder - Recording started
+[INFO ] 2023-04-23 14:00:31.039 [main] ReportManager - Target URL: "https://www.phptravels.net/"
+[INFO ] 2023-04-23 14:00:44.700 [main] ReportManager - File Action "CreateFile" successfully performed. With the following test data "Target Folder: "allure-results//screenshots/20230423-140043", Target File: "\1682251244463_testFirst.gif"".
+[INFO ] 2023-04-23 14:00:45.888 [main] ReportManager - Navigate to url "https://www.phptravels.net/".
+[INFO ] 2023-04-23 14:00:46.900 [main] ReportManager - Click "ACCOUNT ".
+[INFO ] 2023-04-23 14:00:48.303 [main] ReportManager - Click "Customer Signup".
+[INFO ] 2023-04-23 14:00:55.338 [main] ReportManager - Type "Abdulrahman" into "First Name".
+[INFO ] 2023-04-23 14:00:55.982 [main] ReportManager - Type "Emad" into "Last Name".
+[INFO ] 2023-04-23 14:00:56.558 [main] ReportManager - Type "01007943090" into "Phone".
+[INFO ] 2023-04-23 14:00:57.145 [main] ReportManager - Type "test@gmail.com" into "Email".
+[INFO ] 2023-04-23 14:00:57.721 [main] ReportManager - Type "123456" into "Password".
+[INFO ] 2023-04-23 14:00:59.297 [main] ReportManager - Click "Signup".
+[INFO ] 2023-04-23 14:00:59.316 [main] ReportManager - Successfully created attachment 'Animated Gif - testFirst'
+[INFO ] 2023-04-23 14:00:59.320 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: testFirst'
+[INFO ] 2023-04-23 14:00:59.320 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:59.417 [main] ReportManager - Setting discrete logging to: 'false'
+[INFO ] 2023-04-23 14:00:59.417 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                            Starting execution of suite teardown configuration method                                            
+                                        'com.shaft.listeners.internal.ConfigurationHelper.suiteTeardown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-04-23 14:00:59.417 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:59.417 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:59.417 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2023-04-23 14:00:59.417 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2023-04-23 14:00:59.417 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".
+[INFO ] 2023-04-23 14:00:59.442 [main] ReportManager - File Action "ReadFileAsByteArray" successfully performed. With the following test data "File Path: "D:\Study\FWD project\FWD POM\untitled\target\logs\log4j.log"".
+[INFO ] 2023-04-23 14:00:59.442 [main] ReportManager - File Action "DeleteFile" successfully performed. With the following test data "Target File Path: "target/logs/log4j.log"".
+[INFO ] 2023-04-23 14:00:59.442 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:59.442 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log: 20230423-140059'
+[DEBUG] 2023-04-23 14:00:59.465 [main] cache - Couldn't find template in cache for "spark/spark.spa.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.465 [main] cache - TemplateLoader.findTemplateSource("spark/spark.spa_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.465 [main] cache - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.465 [main] cache - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.465 [main] cache - Loading template for "spark/spark.spa.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+[DEBUG] 2023-04-23 14:00:59.568 [main] cache - Couldn't find template in cache for "commons/commons-variables.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.568 [main] cache - TemplateLoader.findTemplateSource("commons/commons-variables_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.568 [main] cache - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.568 [main] cache - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.568 [main] cache - Loading template for "commons/commons-variables.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+[DEBUG] 2023-04-23 14:00:59.663 [main] cache - Couldn't find template in cache for "commons/commons-macros.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.663 [main] cache - TemplateLoader.findTemplateSource("commons/commons-macros_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.663 [main] cache - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.663 [main] cache - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.663 [main] cache - Loading template for "commons/commons-macros.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attributes_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Loading template for "spark/macros/attributes.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Couldn't find template in cache for "spark/macros/log.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/log_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Loading template for "spark/macros/log.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Loading template for "spark/macros/recurse_nodes.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - "spark/macros/log.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.679 [main] cache - Loading template for "spark/macros/attr-common.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - Couldn't find template in cache for "spark/partials/head.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("spark/partials/head_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - Loading template for "spark/partials/head.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - Loading template for "commons/commons-inject-css.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("spark/partials/navbar_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.695 [main] cache - Loading template for "spark/partials/navbar.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - Loading template for "spark/partials/sidenav.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.710 [main] cache - Loading template for "spark/partials/dashboard.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+[DEBUG] 2023-04-23 14:00:59.758 [main] cache - Couldn't find template in cache for "spark/partials/test.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.764 [main] cache - TemplateLoader.findTemplateSource("spark/partials/test_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.764 [main] cache - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.764 [main] cache - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.764 [main] cache - Loading template for "spark/partials/test.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Loading template for "spark/partials/standard-content.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Couldn't find template in cache for "spark/partials/exception.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/exception_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Loading template for "spark/partials/exception.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Couldn't find template in cache for "spark/partials/log.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/log_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Loading template for "spark/partials/log.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/scripts_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.774 [main] cache - Loading template for "spark/partials/scripts.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+[DEBUG] 2023-04-23 14:00:59.790 [main] cache - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-04-23 14:00:59.790 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_GB.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.790 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+[DEBUG] 2023-04-23 14:00:59.790 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+[DEBUG] 2023-04-23 14:00:59.790 [main] cache - Loading template for "commons/commons-inject-js.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+[INFO ] 2023-04-23 14:00:59.790 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "allure-results/cucumberReport.html"".
+[INFO ] 2023-04-23 14:00:59.790 [main] ReportManager - Successfully created attachment 'HTML - Checkpoints Report'
+[INFO ] 2023-04-23 14:00:59.790 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:00:59.0790 pm
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+
+    <title>Checkpoints Report</title>
+
+    <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/tb/Table_Fixed_Header/vendor/bootstrap/css/bootstrap.min.css">
+    <br>
+    <style>
+    body {
+      background-color: #e9edf1;
+    }
+    .content {
+      max-width: 1400px;
+      margin: auto;
+      background-color:white;
+    }
+    .piechart {
+        display: block;
+        position: relative;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-image: conic-gradient(
+            MediumSeaGreen NaNdeg,
+            Tomato 0);
+    }
+
+    body,
+    .piechart {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table100 .ps__rail-y{
+        width:9px;
+        background-color:transparent;
+        opacity:1!important;
+        right:5px
+    }
+    .table100 .ps__rail-y::before{
+        content:"";
+        display: block;
+        position: relative;
+        background-color:#ebebeb;
+        border-radius:5px;
+        width:100%;
+        height:calc(100% - 30px);
+        left:0;
+        top:15px
+    }
+    .table100 .ps__rail-y .ps__thumb-y{
+        width:100%;
+        right:0;
+        background-color:transparent;
+        opacity:1!important
+    }
+    .table100 .ps__rail-y .ps__thumb-y::before{
+        content:"";
+        display: block;
+        position: relative;
+        background-color:#ccc;
+        border-radius:5px;
+        width:100%;
+        height:calc(100% - 30px);
+        left:0;
+        top:15px
+    }
+    .limiter{
+        width:100%;
+        margin:0 auto
+    }
+    .container-table100{
+        width:100%;
+        min-height:100%;
+        background:#fff;
+        align-items:center;
+        justify-content:center;
+    }
+    .wrap-table100{
+        width:75%
+    }
+    .table100{
+        background-color:#fff
+    }
+    table{
+        width:100%
+    }
+    th,td{
+        font-weight:unset;
+        padding-right:10px
+    }
+    .table100-head th{
+        padding-top:18px;
+        padding-bottom:18px
+    }
+    .table100-body td{
+        padding-top:16px;
+        padding-bottom:16px
+    }
+    .table100{
+        position: relative;
+        padding-top:60px;
+        padding-bottom:60px
+    }
+    .table100-head{
+        position: relative;
+        width:100%;
+        top:0;
+        left:0
+    }
+    .table100-body{
+        max-height:585px;
+        overflow:auto
+    }
+    .table100.ver5{
+        margin-right:-30px
+    }
+    .table100.ver5 .table100-head{
+        padding-right:30px
+    }
+    .table100.ver5 th{
+        font-family: Roboto,sans-serif;
+        font-size:14px;
+        font-weight: bold;
+        color:#555;
+        line-height:1.4;
+        text-transform:uppercase;
+        background-color:transparent
+    }
+    .table100.ver5 td{
+        font-family: Roboto,sans-serif;
+        font-size:15px;
+        color:gray;
+        line-height:1.4;
+        background-color:#f7f7f7
+    }
+    .table100.ver5 .table100-body tr{
+        overflow:hidden;
+        border-bottom:10px solid #fff;
+        border-radius:10px
+    }
+    .table100.ver5 .table100-body table{
+        border-collapse:separate;
+        border-spacing:0 10px
+    }
+    .table100.ver5 .table100-body td{
+        border:solid 1px transparent;
+        border-style:solid none;
+        padding-top:10px;
+        padding-bottom:10px
+    }
+    .table100.ver5 .table100-body td:first-child{
+        border-left-style:solid;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px
+    }
+    .table100.ver5 .table100-body td:last-child{
+        border-right-style:solid;
+        border-bottom-right-radius:10px;
+        border-top-right-radius:10px
+    }
+    .table100.ver5 tr:hover td{
+        background-color:#ebebeb;
+        cursor:pointer
+    }
+    .table100.ver5 .table100-head th{
+        padding-top:25px;
+        padding-bottom:25px
+    }
+    .table100.ver5{
+        overflow:hidden
+    }
+    .table100.ver5 .table100-body{
+        padding-right:30px
+    }
+    .table100.ver5 .ps__rail-y{
+        right:0
+    }
+    .table100.ver5 .ps__rail-y::before{
+        background-color:#ebebeb
+    }
+    .table100.ver5 .ps__rail-y .ps__thumb-y::before{
+        background-color:#ccc
+    }
+    .column1{
+        width:5%;
+        padding-left:40px
+    }
+    .column2{
+        width:10%
+    }
+    .column3{
+        width:75%
+    }
+    .column4{
+        width:10%
+    }
+
+</style>
+</head>
+
+<body>
+<center>
+<h1>Checkpoints Report</h1>
+<br><div class="content">
+<h2><br><br>Summary</h2>
+<br><div class="piechart"></div>
+<br><h3><b>Total</b>:&nbsp0&nbsp|&nbsp<font style="color:MediumSeaGreen;"><b>Passed:</b>&nbsp0</font>&nbsp|&nbsp<font style="color:Tomato;"><b>Failed:</b>&nbsp0</font></h3>
+<h2><br><br>Details</h2>
+<div class="limiter">
+<div class="container-table100">
+<div class="wrap-table100">
+<div class="table100 ver5 m-b-110">
+<div class="table100-head">
+<table>
+<thead>
+<tr class="row100 head">
+<th class="cell100 column1">ID</th>
+<th class="cell100 column2">Type</th>
+<th class="cell100 column3">Message</th>
+<th class="cell100 column4">Status</th>
+</tr>
+</thead>
+</table>
+</div>
+<div class="table100-body js-pscroll ps ps--active-y">
+<table>
+<tbody></tbody>
+</table>
+<div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+</div>
+</center>
+</body>
+</html>
+
+[INFO ] 2023-04-23 14:00:59.790 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:59.805 [main] ReportManager - ===============================================
+[INFO ] 2023-04-23 14:00:59.805 [main] ReportManager - Suite
+[INFO ] 2023-04-23 14:00:59.805 [main] ReportManager - Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+[INFO ] 2023-04-23 14:00:59.805 [main] ReportManager - ===============================================
+[INFO ] 2023-04-23 14:00:59.805 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:00:59.805 [main] ReportManager - Generating Allure Report Archive...
+[INFO ] 2023-04-23 14:00:59.837 [main] ReportManager - Executing: ".\C:\Users\DELL\.m2\repository\allure\allure-2.21.0/bin/allure.bat generate 'allure-results' -o 'generatedReport/allure-report'" locally.
+[INFO ] 2023-04-23 14:01:00.211 [main] ReportManager - Terminal Action "PerformTerminalCommands" successfully performed. With the following test data "Host Name: "localHost" | Command: "C:\Users\DELL\.m2\repository\allure\allure-2.21.0/bin/allure.bat generate 'allure-results' -o 'generatedReport/allure-report'" | Exit Status: "1"".
+[ERROR] 2023-04-23 14:01:00.211 [main] AllureLifecycle - Could not start step: no test case running
+[ERROR] 2023-04-23 14:01:00.211 [main] AllureLifecycle - Could not add attachment: no test is running
+[INFO ] 2023-04-23 14:01:00.211 [main] ReportManager - Successfully created attachment 'Terminal Action Actual Result - Command Log'
+[INFO ] 2023-04-23 14:01:00.211 [main] ReportManager - [ReportManager] Debugging Attachment Entry @23-04-2023 14:01:00.0211 pm
+.\C:\Users\DELL\.m2\repository\allure\allure-2.21.0/bin/allure.bat : The term 
+'.\C:\Users\DELL\.m2\repository\allure\allure-2.21.0/bin/allure.bat' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At line:1 char:1
++ .\C:\Users\DELL\.m2\repository\allure\allure-2.21.0/bin/allure.bat ge ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\C:\Users\DELL.../bin/allure.bat:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+[ERROR] 2023-04-23 14:01:00.211 [main] AllureLifecycle - Could not update step: no step running
+[ERROR] 2023-04-23 14:01:00.211 [main] AllureLifecycle - Could not stop step: no step running
+[INFO ] 2023-04-23 14:01:00.211 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "C:\Users\DELL\.m2\repository\allure\"".
+[INFO ] 2023-04-23 14:01:00.211 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "C:\Users\DELL\.m2\repository\allure\"".
+[INFO ] 2023-04-23 14:01:00.211 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "C:\Users\DELL\.m2\repository\allure\"".
+[INFO ] 2023-04-23 14:01:00.490 [main] ReportManager - File Action "CopyFolder" successfully performed. With the following test data "Source Folder: "C:\Users\DELL\.m2\repository\allure" | Destination Folder: "generatedReport\allure"".
+[INFO ] 2023-04-23 14:01:00.521 [main] ReportManager - File Action "CopyFolder" successfully performed. With the following test data "Source Folder: "allure-results" | Destination Folder: "generatedReport\allure-results"".
+[INFO ] 2023-04-23 14:01:00.521 [main] ReportManager - Archiving the following files:
+generatedReport\allure\allure-2.21.0\bin\allure
+generatedReport\allure\allure-2.21.0\bin\allure.bat
+generatedReport\allure\allure-2.21.0\config\allure-cucumber.yml
+generatedReport\allure\allure-2.21.0\config\allure-junit.yml
+generatedReport\allure\allure-2.21.0\config\allure.yml
+generatedReport\allure\allure-2.21.0\lib\allure-commandline-2.21.0.jar
+generatedReport\allure\allure-2.21.0\lib\allure-generator-2.21.0.jar
+generatedReport\allure\allure-2.21.0\lib\allure-model-2.20.1.jar
+generatedReport\allure\allure-2.21.0\lib\allure-plugin-api-2.21.0.jar
+generatedReport\allure\allure-2.21.0\lib\allure1-model-1.0.jar
+generatedReport\allure\allure-2.21.0\lib\annotations-15.0.jar
+generatedReport\allure\allure-2.21.0\lib\commons-beanutils-1.9.4.jar
+generatedReport\allure\allure-2.21.0\lib\commons-codec-1.11.jar
+generatedReport\allure\allure-2.21.0\lib\commons-collections-3.2.2.jar
+generatedReport\allure\allure-2.21.0\lib\commons-collections4-4.2.jar
+generatedReport\allure\allure-2.21.0\lib\commons-io-2.11.0.jar
+generatedReport\allure\allure-2.21.0\lib\commons-lang3-3.12.0.jar
+generatedReport\allure\allure-2.21.0\lib\commons-logging-1.2.jar
+generatedReport\allure\allure-2.21.0\lib\commons-text-1.3.jar
+generatedReport\allure\allure-2.21.0\lib\config\jetty-logging.properties
+generatedReport\allure\allure-2.21.0\lib\config\logback.xml
+generatedReport\allure\allure-2.21.0\lib\flexmark-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-ext-tables-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-ast-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-builder-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-collection-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-data-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-dependency-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-format-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-html-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-misc-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-options-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-sequence-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\flexmark-util-visitor-0.62.2.jar
+generatedReport\allure\allure-2.21.0\lib\freemarker-2.3.32.jar
+generatedReport\allure\allure-2.21.0\lib\httpclient-4.5.14.jar
+generatedReport\allure\allure-2.21.0\lib\httpcore-4.4.16.jar
+generatedReport\allure\allure-2.21.0\lib\jackson-annotations-2.14.1.jar
+generatedReport\allure\allure-2.21.0\lib\jackson-core-2.14.1.jar
+generatedReport\allure\allure-2.21.0\lib\jackson-databind-2.14.1.jar
+generatedReport\allure\allure-2.21.0\lib\jackson-dataformat-xml-2.14.1.jar
+generatedReport\allure\allure-2.21.0\lib\jackson-dataformat-yaml-2.14.1.jar
+generatedReport\allure\allure-2.21.0\lib\jackson-module-jaxb-annotations-2.14.1.jar
+generatedReport\allure\allure-2.21.0\lib\jakarta.activation-api-1.2.2.jar
+generatedReport\allure\allure-2.21.0\lib\jakarta.xml.bind-api-2.3.3.jar
+generatedReport\allure\allure-2.21.0\lib\javax.activation-api-1.2.0.jar
+generatedReport\allure\allure-2.21.0\lib\javax.servlet-api-3.1.0.jar
+generatedReport\allure\allure-2.21.0\lib\jaxb-api-2.3.1.jar
+generatedReport\allure\allure-2.21.0\lib\jaxb-utils-1.0.jar
+generatedReport\allure\allure-2.21.0\lib\jcommander-1.82.jar
+generatedReport\allure\allure-2.21.0\lib\jetty-http-9.4.49.v20220914.jar
+generatedReport\allure\allure-2.21.0\lib\jetty-io-9.4.49.v20220914.jar
+generatedReport\allure\allure-2.21.0\lib\jetty-server-9.4.49.v20220914.jar
+generatedReport\allure\allure-2.21.0\lib\jetty-util-9.4.49.v20220914.jar
+generatedReport\allure\allure-2.21.0\lib\logback-classic-1.3.5.jar
+generatedReport\allure\allure-2.21.0\lib\logback-core-1.3.5.jar
+generatedReport\allure\allure-2.21.0\lib\opencsv-4.6.jar
+generatedReport\allure\allure-2.21.0\lib\properties-2.0.RC5.jar
+generatedReport\allure\allure-2.21.0\lib\slf4j-api-2.0.3.jar
+generatedReport\allure\allure-2.21.0\lib\snakeyaml-1.33.jar
+generatedReport\allure\allure-2.21.0\lib\stax2-api-4.2.1.jar
+generatedReport\allure\allure-2.21.0\lib\tika-core-2.6.0.jar
+generatedReport\allure\allure-2.21.0\lib\woodstox-core-6.4.0.jar
+generatedReport\allure\allure-2.21.0\plugins\behaviors-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\behaviors-plugin\behaviors-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\behaviors-plugin\static\index.js
+generatedReport\allure\allure-2.21.0\plugins\custom-logo-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\custom-logo-plugin\custom-logo-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\custom-logo-plugin\static\custom-logo.svg
+generatedReport\allure\allure-2.21.0\plugins\custom-logo-plugin\static\shaft_white.png
+generatedReport\allure\allure-2.21.0\plugins\custom-logo-plugin\static\styles.css
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\jira-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\allure-jira-commons-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\converter-jackson-2.6.1.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\jackson-annotations-2.14.1.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\jackson-core-2.14.1.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\jackson-databind-2.14.1.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\okhttp-3.12.0.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\okio-1.15.0.jar
+generatedReport\allure\allure-2.21.0\plugins\jira-plugin\lib\retrofit-2.6.1.jar
+generatedReport\allure\allure-2.21.0\plugins\junit-xml-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\junit-xml-plugin\junit-xml-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\packages-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\packages-plugin\packages-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\packages-plugin\static\index.js
+generatedReport\allure\allure-2.21.0\plugins\README.txt
+generatedReport\allure\allure-2.21.0\plugins\screen-diff-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\screen-diff-plugin\screen-diff-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\screen-diff-plugin\static\index.js
+generatedReport\allure\allure-2.21.0\plugins\screen-diff-plugin\static\styles.css
+generatedReport\allure\allure-2.21.0\plugins\trx-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\trx-plugin\trx-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\xctest-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\xctest-plugin\lib\xmlwise-1.2.11.jar
+generatedReport\allure\allure-2.21.0\plugins\xctest-plugin\xctest-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\allure-jira-commons-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\converter-jackson-2.6.1.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\jackson-annotations-2.14.1.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\jackson-core-2.14.1.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\jackson-databind-2.14.1.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\okhttp-3.12.0.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\okio-1.15.0.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\lib\retrofit-2.6.1.jar
+generatedReport\allure\allure-2.21.0\plugins\xray-plugin\xray-plugin-2.21.0.jar
+generatedReport\allure\allure-2.21.0\plugins\xunit-xml-plugin\allure-plugin.yml
+generatedReport\allure\allure-2.21.0\plugins\xunit-xml-plugin\xunit-xml-plugin-2.21.0.jar
+generatedReport\allure-results\060b2b49-98f4-4d54-b9b2-9f20940cf6d2-container.json
+generatedReport\allure-results\42e64d21-1c19-4209-a57b-b23d53103a6e-attachment.properties
+generatedReport\allure-results\4cc742bf-a4f0-4f73-82d4-da0fa21c06d9-attachment.html
+generatedReport\allure-results\4d5d38f9-9ad7-4a4c-8dd8-d0b1b939a3f1-attachment
+generatedReport\allure-results\6493bce9-5584-4e4f-9c74-c2f9c08a33e3-attachment.gif
+generatedReport\allure-results\6bd4029b-c7c2-46c4-ba8c-f722b6b2b615-attachment.properties
+generatedReport\allure-results\6c80ead4-113e-4600-be32-f07c03169a7f-attachment.properties
+generatedReport\allure-results\7a1803fd-06fe-4631-9023-b139c3d27ffa-attachment.txt
+generatedReport\allure-results\80e80a6c-328d-4914-a7d7-a58b9eb501f0-attachment.properties
+generatedReport\allure-results\83f19e3c-4460-4beb-867b-db81f60ab202-container.json
+generatedReport\allure-results\87461e03-5c0e-4e60-9c90-741211e67626-attachment.properties
+generatedReport\allure-results\943f4617-4839-45e5-811e-44f74c272f12-attachment.properties
+generatedReport\allure-results\a670d1c0-45a6-4da3-81a1-42d835e15d0d-result.json
+generatedReport\allure-results\ae3f869e-c4c2-4191-b6bd-7a6d635bc1db-attachment.properties
+generatedReport\allure-results\c19757e2-b41e-43c9-ae2c-be9617b99705-container.json
+generatedReport\allure-results\e7d9938c-5090-4e31-887b-1a8061a7fcff-attachment.txt
+generatedReport\allure-results\environment.xml
+generatedReport\allure-results\f7246df3-706f-4bf2-9d74-4e198132aed7-attachment.html
+generatedReport\allure-results\ffcefb81-3257-4cf8-a8fc-f2709f008bce-attachment.properties
+generatedReport\allure-results\screenshots\20230423-140043\1682251244463_testFirst.gif
+generatedReport\allure-results\videos\ScreenRecording 2023-04-23 at 14.00.30.avi
+generatedReport\open_allure_report.bat
+generatedReport\open_allure_report.sh
+[INFO ] 2023-04-23 14:01:03.740 [main] ReportManager - File Action "ZipFiles" successfully performed. With the following test data "Target Folder: "generatedReport/" | Destination Archive: "generatedReport_20230423-140100.zip"".
+[INFO ] 2023-04-23 14:01:03.783 [main] ReportManager - File Action "DeleteFile" successfully performed. With the following test data "Target File Path: "generatedReport/"".
+[INFO ] 2023-04-23 14:01:03.788 [main] ReportManager - Executing: ".\generate_allure_report.bat" locally.
+[INFO ] 2023-04-23 14:01:03.792 [main] ReportManager - Terminal Action "PerformTerminalCommands" successfully performed. With the following test data "Host Name: "localHost" | Command: "generate_allure_report.bat" | Exit Status: "asynchronous"".
+[INFO ] 2023-04-23 14:01:03.792 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative File Path: "execution-summary/ExecutionSummaryReport_23-04-2023_14-01-03-0792-pm.html"".
+[INFO ] 2023-04-23 14:01:03.804 [main] ReportManager - File Action "WriteToFile" successfully performed. With the following test data "Target File Path: "D:\Study\FWD project\FWD POM\untitled\execution-summary\ExecutionSummaryReport_23-04-2023_14-01-03-0792-pm.html"".
+[INFO ] 2023-04-23 14:01:03.808 [main] ReportManager - Executing: ".\execution-summary/ExecutionSummaryReport_*.html" locally.
+[INFO ] 2023-04-23 14:01:04.082 [main] ReportManager - Terminal Action "PerformTerminalCommands" successfully performed. With the following test data "Host Name: "localHost" | Command: ".\execution-summary/ExecutionSummaryReport_*.html" | Exit Status: "0"".
+[INFO ] 2023-04-23 14:01:04.089 [main] ReportManager - Setting discrete logging to: 'false'
+[INFO ] 2023-04-23 14:01:04.089 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                         Test Execution Summary Results                                                         
+                                              Total Cases: 1 --> Passed: 1 | Failed: 0 | Skipped: 0                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-04-23 14:01:04.089 [main] ReportManager - Setting discrete logging to: 'true'
+[INFO ] 2023-04-23 14:01:04.089 [main] ReportManager - Setting discrete logging to: 'false'
+[INFO ] 2023-04-23 14:01:04.089 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             This test run was powered by SHAFT Engine v7.2.20230419                                             
+                                  SHAFT Engine is *and will always be* 100% FREE for commercial and private use                                  
+                                                       in compliance with the MIT license                                                       
+                                           https://github.com/ShaftHQ/SHAFT_ENGINE/blob/master/LICENSE                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-04-23 14:01:04.090 [main] ReportManager - Setting discrete logging to: 'true'
+[DEBUG] 2023-04-23 14:01:04.091 [wdm-shutdown-hook] WebDriverManager - Quitting ChromeDriver: chrome on WINDOWS (fd3f6398eac7d297b7ecd412d7f9f60c)

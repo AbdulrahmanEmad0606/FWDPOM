@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6fc19421-ef0b-4d2c-aced-91fb90beffb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/060b2b49-98f4-4d54-b9b2-9f20940cf6d2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/42e64d21-1c19-4209-a57b-b23d53103a6e-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4cc742bf-a4f0-4f73-82d4-da0fa21c06d9-attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4d5d38f9-9ad7-4a4c-8dd8-d0b1b939a3f1-attachment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6493bce9-5584-4e4f-9c74-c2f9c08a33e3-attachment.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6bd4029b-c7c2-46c4-ba8c-f722b6b2b615-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6c80ead4-113e-4600-be32-f07c03169a7f-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7a1803fd-06fe-4631-9023-b139c3d27ffa-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/80e80a6c-328d-4914-a7d7-a58b9eb501f0-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/83f19e3c-4460-4beb-867b-db81f60ab202-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/87461e03-5c0e-4e60-9c90-741211e67626-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/943f4617-4839-45e5-811e-44f74c272f12-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a670d1c0-45a6-4da3-81a1-42d835e15d0d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ae3f869e-c4c2-4191-b6bd-7a6d635bc1db-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c19757e2-b41e-43c9-ae2c-be9617b99705-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e7d9938c-5090-4e31-887b-1a8061a7fcff-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/environment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f7246df3-706f-4bf2-9d74-4e198132aed7-attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ffcefb81-3257-4cf8-a8fc-f2709f008bce-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/screenshots/20230423-140043/1682251244463_testFirst.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/videos/ScreenRecording 2023-04-23 at 14.00.30.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/execution-summary/ExecutionSummaryReport_23-04-2023_14-01-03-0792-pm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extent-reports/ExtentReports_23-04-2023_14-00-26-0942-pm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate_allure_report.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-025230.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-031424.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-031722.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-032533.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-032904.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-033432.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-044601.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-050338.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-051603.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-051805.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-051946.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatedReport_20230423-140100.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/JiraXRay.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/Reporting.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/TestNG.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/VisualValidations.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/cucumber.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/customWebdriverCapabilities.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/TestNG.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/cucumber.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/customWebdriverCapabilities.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/path.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 03.14.03.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 03.17.06.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 03.25.24.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 03.28.54.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 03.34.22.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 04.45.52.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 05.02.01.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 05.14.46.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 05.17.50.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/ScreenRecording 2023-04-23 at 05.19.31.avi" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OnnskC26Lxyy2MtFULRtqG0DqC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Study/FWD project/FWD POM/untitled/src/main/resources/properties&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\FWD project\FWD POM\untitled\src\main\resources\properties" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\FWD project\FWD POM\untitled\src\main\resources\properties" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Test1.testFirst" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test1" />
+      <option name="METHOD_NAME" value="testFirst" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="com.shaft.listeners.TestNGListener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Test1.testFirst" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fc19421-ef0b-4d2c-aced-91fb90beffb2" name="Changes" comment="" />
+      <created>1682205424213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682205424213</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
